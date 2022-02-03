@@ -27,7 +27,7 @@ if ($fuktstatus=="Fukt!"){
 ?>
 
 <body style='background-color:green; font-size:35'>
-<center><img src='https://www.santamariaworld.com/optimized/hero-xlarge/globalassets/_featurelandingpage/chili/chili_block.jpg' width=75%><br>
+<center><img src='bilder/chili-planta.jpg' width=75%><br>
 <br>Fuktig jord!<br>Ej behov att vattna! <br> :)</center>
 </body>
 <?php
@@ -36,7 +36,7 @@ if ($fuktstatus=="Fukt!"){
 ?>
 
 <body style='background-color:red; font-size:35px;'>
-<center><img src='https://www.santamariaworld.com/optimized/hero-xlarge/globalassets/_featurelandingpage/chili/chili_block.jpg' style='width:75%'>
+<center><img src='bilder/chili-planta.jpg' style='width:75%'>
 <br>Jorden är torr <br>Vattning behövs! <br> :(</center>
 </body>
 <?php
