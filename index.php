@@ -28,7 +28,7 @@ if ($fuktstatus=="Fukt!"){
 
 <body style='background-color:green; font-size:35'>
 <center><img src='https://www.santamariaworld.com/optimized/hero-xlarge/globalassets/_featurelandingpage/chili/chili_block.jpg' width=75%><br>
-<br>Fuktig jord!<br> Ej behov att vattna</center>
+<br>Fuktig jord!<br>Ej behov att vattna! :)</center>
 </body>
 <?php
 
