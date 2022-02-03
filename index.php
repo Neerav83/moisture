@@ -28,7 +28,7 @@ if ($fuktstatus=="Fukt!"){
 
 <body style='background-color:green; font-size:35'>
 <center><img src='bilder/chili-planta.jpg' width=75%><br>
-<br>Fuktig jord!<br>Ej behov att vattna! <br> <img src='biler/smilie-glad.gif' style='width:100px;'></center>
+<br>Fuktig jord!<br>Ej behov att vattna! <br> <img src='bilder/smilie-glad.gif' style='width:100px;'></center>
 </body>
 <?php
 
