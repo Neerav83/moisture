@@ -37,7 +37,7 @@ if ($fuktstatus=="Fukt!"){
 
 <body style='background-color:red; font-size:35px;'>
 <center><img src='https://www.santamariaworld.com/optimized/hero-xlarge/globalassets/_featurelandingpage/chili/chili_block.jpg' style='width:75%'>
-<br>Jorden är torr <br>Vattning behövs!</center>
+<br>Jorden är torr <br>Vattning behövs! <br> :(</center>
 </body>
 <?php
 }
