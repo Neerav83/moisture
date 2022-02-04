@@ -20,7 +20,7 @@ font-family: 'Open Sans',sans-serif;
 <br>
 <center><h4>Fuktstatus</h4></center>
 <?php
-$handler =fopen("/var/www/moisture/pythonscript/status.txt","r");
+$handler =fopen("/var/www/html/moisture/pythonscript/status.txt","r");
 $fuktstatus= fread($handler,20);
 
 echo $fuktstatus;
