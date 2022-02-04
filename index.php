@@ -23,7 +23,7 @@ font-family: 'Open Sans',sans-serif;
 $handler =fopen("/home/pi/soil-moisture-sensor/fuktstatus.txt","r");
 $fuktstatus= fread($handler,20);
 
-if ($fuktstatus=="Fukt!"){
+if ($fuktstatus=="1"){
 ?>
 
 <body style='background-color:green; font-size:35'>
