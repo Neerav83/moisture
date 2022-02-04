@@ -23,6 +23,8 @@ font-family: 'Open Sans',sans-serif;
 $handler =fopen("/var/www/moisture/pythonscript/status.txt","r");
 $fuktstatus= fread($handler,20);
 
+echo $fuktstatus;
+
 if ($fuktstatus=="1"){
 ?>
 
