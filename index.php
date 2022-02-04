@@ -45,7 +45,7 @@ if ($fuktstatus=="1"){
 
 <body style='background-color:red; font-size:35px;'>
 <center><img src='bilder/chili-planta.jpg' style='width:75%'>
-<br>Jorden är torr <br>Vattning behövs! <br> <br> <img src='bilder/sad-smile.png' style='width:100px;'></center>
+<br>Jorden är torr <br>Vattning behövs! <br> <br> <img src='bilder/sad-smile2.png' style='width:100px;'></center>
 </body>
 <?php
 }
