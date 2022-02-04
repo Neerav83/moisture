@@ -10,7 +10,7 @@ $strang="python moisture.py";
 if (strpos($output, $strang) !== false) {
 
 } else {
-  $run="sudo nohup /var/www/html/moisture/pythonscript/moisture.py";
+  $run="sudo nohup python /var/www/html/moisture/pythonscript/moisture.py";
   shell_exec($run);
 }
 
