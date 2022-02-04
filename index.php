@@ -29,7 +29,7 @@ font-family: 'Open Sans',sans-serif;
 $handler =fopen("/var/www/html/moisture/pythonscript/status.txt","r");
 $fuktstatus= fread($handler,20);
 
-echo $fuktstatus;
+//echo $fuktstatus;
 
 if ($fuktstatus=="1"){
 ?>
