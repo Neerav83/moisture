@@ -20,7 +20,7 @@ font-family: 'Open Sans',sans-serif;
 <br>
 <center><h4>Fuktstatus</h4></center>
 <?php
-$handler =fopen("/home/pi/soil-moisture-sensor/fuktstatus.txt","r");
+$handler =fopen("/python/status.txt","r");
 $fuktstatus= fread($handler,20);
 
 if ($fuktstatus=="1"){
