@@ -2,6 +2,21 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+$output = shell_exec(' ps aux | grep moisture.py');
+//echo "<pre>$output</pre>";
+$strang="python moisture.py";
+
+if (strpos($output, $strang) !== false) {
+
+} else {
+  $run="sudo nohup /var/www/html/moisture/pythonscript/moisture.py";
+  shell_exec($run);
+}
+
+
+
+
 ?>
 
 <html lang="SE" dir="ltr" data-locale="SE" class="">
