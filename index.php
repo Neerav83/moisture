@@ -20,7 +20,7 @@ font-family: 'Open Sans',sans-serif;
 <br>
 <center><h4>Fuktstatus</h4></center>
 <?php
-$handler =fopen("/python/status.txt","r");
+$handler =fopen("/pythonscript/status.txt","r");
 $fuktstatus= fread($handler,20);
 
 if ($fuktstatus=="1"){
