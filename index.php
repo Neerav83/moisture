@@ -36,7 +36,7 @@ if ($fuktstatus=="1"){
 
 <body style='background-color:green; font-size:35'>
 <center><img src='bilder/chili-planta.jpg' width=75%><br>
-<br>Fuktig jord!<br>Ej behov att vattna! <br><br> <img src='bilder/smilie-glad.gif' style='width:100px;'></center>
+<br>Jorden är fuktig!<br>Ej behov att vattna! <br><br> <img src='bilder/smilie-glad.gif' style='width:100px;'></center>
 </body>
 <?php
 
