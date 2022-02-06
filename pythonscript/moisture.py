@@ -10,14 +10,14 @@ import requests
 def callback(channel):
         if GPIO.input(channel):
                 print ("LED off")
-                r = requests.get("http://server-aspire-x/iot/moisture/addtodatabase.php?status=0")
+                r = requests.get("http://server-aspire-x/iot/moisture/addtodatabase.php")
                 #f = open("status.txt", "w")
                 #f.write("0")
                 #f.close()
 
         else:
                 print ("LED on")
-                r = requests.get("http://server-aspire-x/iot/moisture/addtodatabase.php?status=1")
+                r = requests.get("http://server-aspire-x/iot/moisture/addtodatabase.php")
                 #f = open("status.txt", "w")
                 #f.write("1")
                 #f.close()
