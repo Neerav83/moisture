@@ -5,12 +5,12 @@
 import RPi.GPIO as GPIO # This is the GPIO library we need to use the GPIO pins on the Raspberry Pi
 #import smtplib # This is the SMTP library we need to send the email notification
 import time
-import httplib2
+import urllib.request
 
 def callback(channel):
         if GPIO.input(channel):
                 print ("LED off")
-                resp, content = httplib2.Http().request("http://server-aspire-x/iot/moisture/addtodatabase.php")
+                content = urllib.request.urlopen("http://server-aspire-x/iot/moisture/addtodatabase.php").read()
                 #r = requests.get("http://server-aspire-x/iot/moisture/addtodatabase.php")
                 #f = open("status.txt", "w")
                 #f.write("0")
@@ -18,7 +18,7 @@ def callback(channel):
 
         else:
                 print ("LED on")
-                resp, content = httplib2.Http().request("http://server-aspire-x/iot/moisture/addtodatabase.php")
+                content = urllib.request.urlopen("http://server-aspire-x/iot/moisture/addtodatabase.php").read()
                 #r = requests.get("http://server-aspire-x/iot/moisture/addtodatabase.php")
                 #f = open("status.txt", "w")
                 #f.write("1")
