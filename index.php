@@ -4,8 +4,7 @@
 include 'db_connection.php';
 $conn = OpenCon();
 //echo "Connected Successfully";
-$sql = "SELECT * FROM 'moisture' order by id DESC LIMIT 1";
-
+$sql = "SELECT * FROM moisture order by id DESC LIMIT 1"; 
 if ($result = $conn->query($sql)) {
 
     if ($result->num_rows > 0) {
