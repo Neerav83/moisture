@@ -10,19 +10,19 @@ import urllib.request
 def callback(channel):
         if GPIO.input(channel):
                 print ("LED off")
-                content = urllib.request.urlopen("http://server-aspire-x/iot/moisture/addtodatabase.php").read()
+               # content = urllib.request.urlopen("http://server-aspire-x/iot/moisture/addtodatabase.php").read()
                 #r = requests.get("http://server-aspire-x/iot/moisture/addtodatabase.php")
-                #f = open("status.txt", "w")
-                #f.write("0")
-                #f.close()
+                f = open("status.txt", "w")
+                f.write("0")
+                f.close()
 
         else:
                 print ("LED on")
-                content = urllib.request.urlopen("http://server-aspire-x/iot/moisture/addtodatabase.php").read()
+                #content = urllib.request.urlopen("http://server-aspire-x/iot/moisture/addtodatabase.php").read()
                 #r = requests.get("http://server-aspire-x/iot/moisture/addtodatabase.php")
-                #f = open("status.txt", "w")
-                #f.write("1")
-                #f.close()
+                f = open("status.txt", "w")
+                f.write("1")
+                f.close()
 
 
 # Set our GPIO numbering to BCM
