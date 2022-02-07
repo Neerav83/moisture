@@ -2,7 +2,6 @@
 <?php 
 header('Content-type: text/html; charset=latin1_swedish_ci');
 
-
 ?>
 <html lang="SE" dir="ltr" data-locale="SE" class="">
 <head>
@@ -58,7 +57,7 @@ for ($i=0;$i<$antalrooms;$i++){
     if ($i>0){
         echo "<br>";
     }
-    echo "<b>".$user->rum[$i]."</b>(";
+    echo "<b>".utf8_decode($user->rum[$i])."</b>(";
     echo $user->rumid[$i].")";
     
     unset($user->sensorid);
