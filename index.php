@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta http-equiv="refresh" content="5; url=index.php">
+<?php /*<meta http-equiv="refresh" content="5; url=index.php"> */
+?>
 
 
 <title>Fuktstatus</title>
@@ -48,6 +49,8 @@ $conn = OpenCon();
 $userid= $user->checklogin($conn);
 
 $rooms=$user->getRooms($conn,$userid);
+
+var_dump($rooms);
 
 $antalrooms=$count($rooms);
 
