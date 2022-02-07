@@ -99,9 +99,9 @@ for ($i=0;$i<$antalrooms;$i++){
      echo "<br>".utf8_encode($user->sensorname[$a])." - ";
      
      if ($user->sensorstatus=="1") {
-         echo "<label style='font-size:12px; background-color:lightgreen'>Plantan är fuktig.";
+         echo "<label style='font-size:15px; background-color:lightgreen'>Plantan är fuktig.";
         } else {
-          echo "<label style='font-size:12px; background-color:lightred'>Plantan är torr.";
+          echo "<label style='font-size:15px; background-color:lightred'>Plantan är torr.";
 
         }
         echo "(".$user->sensortime.")</label>";        
