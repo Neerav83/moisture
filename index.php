@@ -2,8 +2,21 @@
 
 
 include 'db_connection.php';
+
+include '/classes/loginclass.php';
+
+$userid= new login('username','password');
+
+echo $userid->username;
+
+
 $conn = OpenCon();
 //echo "Connected Successfully";
+
+$email="XXX";
+
+/*
+
 $sql = "SELECT * FROM moisture order by id DESC LIMIT 1"; 
 if ($result = $conn->query($sql)) {
 
@@ -73,6 +86,7 @@ if ($fuktstatus=="1"){
 <?php
 }
 
-fclose($handler);
+//fclose($handler);
 
 ?>
+*/
