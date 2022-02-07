@@ -60,7 +60,10 @@ $antalrooms=count($user->rum);
 
 
 for ($i=0;$i<$antalrooms;$i++){
-    echo "<br>".$user->rum[$i]."(";
+    if ($i>0){
+        echo "<br>";
+    }
+    echo $user->rum[$i]."(";
     echo $user->rumid[$i].")";
     $user->sensorid="";
 
@@ -70,7 +73,10 @@ for ($i=0;$i<$antalrooms;$i++){
 
 
     for ($a=0; $a<$antalsensors;$a++){
-        echo "<br>".$user->sensorid[$a];
+        if ($a>0){
+            echo "<br>";
+        }
+        echo $user->sensorid[$a];
     }
     
 }
