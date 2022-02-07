@@ -11,7 +11,7 @@ def callback(channel):
         if GPIO.input(channel):
                 print ("LED off")
                # content = urllib.request.urlopen("http://server-aspire-x/iot/moisture/addtodatabase.php").read()
-                r = requests.get("http://98.128.191.251/iot/moisture/addtodatabase.php?status=0&sensorid=30bcd722-4131-4c09-9dde-948161dd1555")
+                r = requests.get("http://98.128.191.251/moisture/addtodatabase.php?status=0&sensorid=30bcd722-4131-4c09-9dde-948161dd1555")
              #   f = open("status.txt", "w")
              #   f.write("0")
              #   f.close()
@@ -19,7 +19,7 @@ def callback(channel):
         else:
                 print ("LED on")
                 #content = urllib.request.urlopen("http://server-aspire-x/iot/moisture/addtodatabase.php").read()
-                r = requests.get("http://98.128.191.251/iot/moisture/addtodatabase.php?status=1&sensorid=30bcd722-4131-4c09-9dde-948161dd1555")
+                r = requests.get("http://98.128.191.251/moisture/addtodatabase.php?status=1&sensorid=30bcd722-4131-4c09-9dde-948161dd1555")
                 #f = open("status.txt", "w")
                 #f.write("1")
                 #f.close()
