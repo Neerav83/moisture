@@ -30,7 +30,17 @@ padding:0px;
   font-weight: 700;
  
 }
-
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
 .container{
   padding:10px;
   background-color:lightgray;
@@ -158,6 +168,8 @@ if ($fuktstatus=="1"){
 */
 
 ?>
+
+<button class='button'>Lägg till Växt</button>
 </div>
 </body>
 </html>
