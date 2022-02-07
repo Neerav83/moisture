@@ -35,7 +35,8 @@ padding:0px;
 .container{
   padding:10px;
   background-color:lightgray;
-  height:90%;
+  height:92%;
+  overflow:hidden;
 }
 </style>
 
