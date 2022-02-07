@@ -59,7 +59,8 @@ $antalrooms=count($user->rum);
 
 
 for ($i=0;$i<$antalrooms;$i++){
-    echo $user->rum[$i]."<br>";
+    echo $user->rum[$i]."(";
+    echo $user->rumid[$i].")<br>";
 
     
 }
