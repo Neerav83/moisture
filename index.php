@@ -57,8 +57,8 @@ for ($i=0;$i<$antalrooms;$i++){
     if ($i>0){
         echo "<br>";
     }
-    echo "<b>".utf8_encode($user->rum[$i])."</b>(";
-    echo $user->rumid[$i].")";
+    echo "<b>".utf8_encode($user->rum[$i])."</b>";
+  //  echo "(".$user->rumid[$i].")";
     
     unset($user->sensorid);
     unset($user->sensorname);
@@ -78,8 +78,10 @@ for ($i=0;$i<$antalrooms;$i++){
 
 
 
-        echo "<br>".utf8_encode($user->sensorname[$a])."(".$user->sensorid[$a].") - ";
-        if ($user->sensorstatus=="1") {
+     //   echo "<br>".utf8_encode($user->sensorname[$a])."(".$user->sensorid[$a].") - ";
+     echo "<br>".utf8_encode($user->sensorname[$a])." - ";
+     
+     if ($user->sensorstatus=="1") {
          echo "<label style='background-color:lightgreen'>Plantan är fuktig.";
         } else {
           echo "<label style='background-color:lightred'>Plantan är torr.";
