@@ -79,8 +79,15 @@ for ($i=0;$i<$antalrooms;$i++){
 
 
 
-        echo "<br>".$user->sensorname[$a]."(".$user->sensorid[$a].")<br>";
-        echo $user->sensorstatus."(".$user->sensortime.")";
+        echo "<br>".$user->sensorname[$a]."(".$user->sensorid[$a].") - ";
+        if ($user->sensorstatus=="1") {
+         echo "<label style='background-color:green'>Plantan är fuktig.";
+        } else {
+          echo "<label style='background-color:red'>Plantan är torr.";
+
+        }
+        echo "(".$user->sensortime.")</label>";        
+
          }
     
 }
