@@ -50,8 +50,32 @@ class login {
             }
       
     }
+
+
   }
       
+
+  function getSensors($conn, $roomid, $userid) {
+
+    $sql = "SELECT * FROM sensors where userid='".$userid."' and roomid='".$roomid."'" ; 
+    if ($result = $conn->query($sql)) {
+  
+        if ($result->num_rows > 0) {
+            // output data of each row
+            $i=0;
+            while($row = $result->fetch_assoc()) {
+                  
+              $this->sensorid[$i]=$row["sensorid"];
+              
+
+              $i++;
+        }
+          } else {
+            echo "0 results";
+          }
+    
+  }
+
 }
 
 ?>
