@@ -22,7 +22,7 @@ margin:0px;
 padding:0px;
 }
 .header{
-  height:9%;
+  height:5%;
   background-color:green;
   color:white;
   width:100%;
