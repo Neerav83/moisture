@@ -8,7 +8,7 @@ if (($status=='1') or ($status=='0')){
 include 'db_connection.php';
 $conn = OpenCon();
 //echo "Connected Successfully";
-$sql = "INSERT INTO moisture ('status','sensorid') VALUES (".$status.",".$sensorid.")";
+$sql = "INSERT INTO moisture (status,sensorid) VALUES (".$status.",".$sensorid.")";
 
 if ($conn->query($sql) === TRUE) {
 //  echo "New record created successfully";
