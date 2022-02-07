@@ -55,7 +55,7 @@ class login {
   }
       
 
-  function getSensors($conn, $roomid, $userid) {
+  function getSensors($conn, $userid, $roomid) {
 
     $sql = "SELECT * FROM sensors where userid='".$userid."' and roomid='".$roomid."'" ; 
     echo $sql;
