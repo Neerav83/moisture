@@ -20,7 +20,7 @@ font-family: 'Open Sans',sans-serif;
 margin:0px;
 padding:0px;
 font-size:20px;
-background-image: url("/bilder/chili-planta.jpg");
+background-image: url("bilder/chili-planta.jpg");
 }
 .header{
   height:5%;
