@@ -26,7 +26,7 @@ padding:0px;
   background-color:green;
   color:white;
   width:100%;
-  padding:5px;
+ 
 }
 </style>
 
