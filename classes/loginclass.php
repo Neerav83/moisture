@@ -27,6 +27,7 @@ class login {
         
           return $userid;
       }
+    }
       
 }
 
