@@ -40,7 +40,7 @@ class login {
               while($row = $result->fetch_assoc()) {
                     
                 $rum[$i]=$row["name"];
-                $i=$i++;
+                $i++;
           }
             } else {
               echo "0 results";
