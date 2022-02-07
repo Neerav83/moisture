@@ -22,10 +22,13 @@ margin:0px;
 padding:0px;
 }
 .header{
-  height:10%;
+  height:9%;
   background-color:green;
   color:white;
   width:100%;
+  padding-top:15px;
+  font-size:25px;
+  font-weight: 700;
  
 }
 
