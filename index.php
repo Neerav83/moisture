@@ -56,8 +56,7 @@ $rooms=$user->getRooms($conn,$userid);
 
 $antalrooms=count($rooms);
 
-for ($i=0;$i<=
-$antalrooms;$i++){
+for ($i=0;$i<$antalrooms;$i++){
     echo $rooms[$i]."<br>";
 }
 
