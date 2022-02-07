@@ -28,6 +28,11 @@ padding:0px;
   width:100%;
  
 }
+
+.container{
+  padding:10px;
+  background-color:lightgray;
+}
 </style>
 
 </head>
@@ -35,6 +40,7 @@ padding:0px;
   <div class=header>
     <center>PlantSensor</center>
   </div>
+  <div class=container>
 <?php 
 /*
 ini_set('display_errors', 1);
@@ -88,7 +94,6 @@ for ($i=0;$i<$antalrooms;$i++){
          }
     
 }
-
 
 
 
@@ -147,3 +152,8 @@ if ($fuktstatus=="1"){
 
 ?>
 */
+
+?>
+</div>
+</body>
+</html>
