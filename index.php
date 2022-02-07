@@ -80,7 +80,7 @@ for ($i=0;$i<$antalrooms;$i++){
 
 
         echo "<br>".$user->sensorname[$a]."(".$user->sensorid[$a].")<br>";
-        echo $user->sensorstatus."(".$user->sensertime.")";
+        echo $user->sensorstatus."(".$user->sensortime.")";
          }
     
 }
