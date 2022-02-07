@@ -80,8 +80,31 @@ class login {
            }
     
   }
+  }
+
+  function getSensorStatus($conn, $sensorid) {
+
+    $sql = "SELECT * FROM moisture where sensorid = '".$sensorid."' order by time DESC LIMIT 1"; 
+   // echo $sql;
+    if ($result = $conn->query($sql)) {
+  
+        if ($result->num_rows > 0) {
+            // output data of each row
+            $i=0;
+            while($row = $result->fetch_assoc()) {
+                        
+              $this->sensorstatus=$row['status'];
+              $this->sensortime=$row['time'];
+  
+        }
+          } else {
+           // $this->sensorid[0]=0;
+           }
+    
+  }
+
+
 
 }
-
 }
 ?>

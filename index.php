@@ -74,10 +74,18 @@ for ($i=0;$i<$antalrooms;$i++){
 
     for ($a=0; $a<$antalsensors;$a++){
         
-        echo "<br>".$user->sensorname[$a]."(".$user->sensorid[$a].")";
+      $user->getSensorStatus($conn,$user->sensorid[$a]);
+
+
+
+
+        echo "<br>".$user->sensorname[$a]."(".$user->sensorid[$a].")<br>";
+        echo $user->sensorstatus."(".$user->sensertime.")";
          }
     
 }
+
+
 /*
 
 $sql = "SELECT * FROM moisture order by id DESC LIMIT 1"; 
