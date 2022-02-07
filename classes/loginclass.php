@@ -64,7 +64,9 @@ class login {
         if ($result->num_rows > 0) {
             // output data of each row
             $i=0;
-            $this->sensorid=[];
+            $this->sensorid[]="";
+            $this->sensorname[]="";
+
             while($row = $result->fetch_assoc()) {
                         
               $this->sensorid[$i]=$row['sensorid'];
