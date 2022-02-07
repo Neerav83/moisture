@@ -1,6 +1,6 @@
 
 <?php 
-header('Content-type: text/html; charset=ISO-8859-1');
+header('Content-type: text/html; charset=latin1_swedish_ci');
 
 
 ?>
