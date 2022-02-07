@@ -36,9 +36,11 @@ class login {
     
           if ($result->num_rows > 0) {
               // output data of each row
+              $i=0;
               while($row = $result->fetch_assoc()) {
                     
-                $rum[$row['id']]=$row["name"];
+                $rum[$i]=$row["name"];
+                $i=$i++;
           }
             } else {
               echo "0 results";

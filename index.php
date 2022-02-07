@@ -54,15 +54,11 @@ $userid= $user->checklogin($conn);
 
 $rooms=$user->getRooms($conn,$userid);
 
-var_dump($rooms);
-
 $antalrooms=count($rooms);
 
 for ($i=0;$i<=
 $antalrooms;$i++){
-
-echo $rooms[$i];
-    
+    echo $rooms[$i]."<br>";
 }
 
 //echo "Connected Successfully";
