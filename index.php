@@ -1,5 +1,9 @@
 
+<?php 
+header('Content-type: text/plain; charset=utf-8');
 
+
+?>
 <html lang="SE" dir="ltr" data-locale="SE" class="">
 <head>
 <meta charset="utf-8">
@@ -54,7 +58,8 @@ var_dump($rooms);
 
 $antalrooms=count($rooms);
 
-for ($i=0;$i<$antalrooms;$i++){
+for ($i=0;$i<=
+$antalrooms;$i++){
 
 echo $rooms[$i];
     
