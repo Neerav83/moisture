@@ -12,7 +12,7 @@ class login {
 
       function checklogin($conn) {
 
-        $sql = "SELECT * FROM users where username='".$this->$username."'"; 
+        $sql = "SELECT * FROM users where username='".$this->username."'"; 
         if ($result = $conn->query($sql)) {
         
             if ($result->num_rows > 0) {
