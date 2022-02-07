@@ -21,9 +21,9 @@ $user= new login($email,'password');
 
 $conn = OpenCon();
 
-echo $user->checklogin($conn);
+$userid= $user->checklogin($conn);
 
-var_dump ($user->getrooms($conn))
+var_dump ($user->getRooms($conn,$userid))
 
 
 
