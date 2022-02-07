@@ -19,10 +19,20 @@ header('Content-type: text/html; charset=latin1_swedish_ci');
 body{
 font-family: 'Open Sans',sans-serif;
 }
-
+.header{
+  height:50px;
+  background-color:green;
+  color:white;
+  width:100%;
+  padding:5px;
+}
 </style>
 
 </head>
+<body>
+  <div class=header>
+    <center>PlantSensor</center>
+  </div>
 <?php 
 /*
 ini_set('display_errors', 1);
@@ -30,27 +40,16 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 */
 include 'db_connection.php';
-
 include 'classes/loginclass.php';
-
 
 $email=$_GET['username'];
 
-
 $user= new login($email,'password');
 
-//echo $login->username;
-
-
 $conn = OpenCon();
-
 $userid= $user->checklogin($conn);
-
 $user->getRooms($conn,$userid);
-
-
 $antalrooms=count($user->rum);
-
 
 
 for ($i=0;$i<$antalrooms;$i++){
@@ -63,8 +62,6 @@ for ($i=0;$i<$antalrooms;$i++){
     unset($user->sensorid);
     unset($user->sensorname);
 
-
-
     $user->getSensors($conn,$userid, $user->rumid[$i]);
 
     $antalsensors=count($user->sensorid);
@@ -74,9 +71,6 @@ for ($i=0;$i<$antalrooms;$i++){
     for ($a=0; $a<$antalsensors;$a++){
         
       $user->getSensorStatus($conn,$user->sensorid[$a]);
-
-
-
 
      //   echo "<br>".utf8_encode($user->sensorname[$a])."(".$user->sensorid[$a].") - ";
      echo "<br>".utf8_encode($user->sensorname[$a])." - ";
@@ -92,6 +86,8 @@ for ($i=0;$i<$antalrooms;$i++){
          }
     
 }
+
+
 
 
 /*
