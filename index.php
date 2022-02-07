@@ -22,7 +22,7 @@ margin:0px;
 padding:0px;
 }
 .header{
-  height:50px;
+  height:10%;
   background-color:green;
   color:white;
   width:100%;
@@ -32,6 +32,7 @@ padding:0px;
 .container{
   padding:10px;
   background-color:lightgray;
+  height:90%;
 }
 </style>
 
