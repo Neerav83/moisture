@@ -58,7 +58,7 @@ for ($i=0;$i<$antalrooms;$i++){
     if ($i>0){
         echo "<br>";
     }
-    echo $user->rum[$i]."(";
+    echo "<b>".$user->rum[$i]."</b>(";
     echo $user->rumid[$i].")";
     
     unset($user->sensorid);
