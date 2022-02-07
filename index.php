@@ -52,7 +52,7 @@ $rooms=$user->getRooms($conn,$userid);
 
 var_dump($rooms);
 
-$antalrooms=$count($rooms);
+$antalrooms=count($rooms);
 
 for ($i=0;$i<$antalrooms;$i++){
 
