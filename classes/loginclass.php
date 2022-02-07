@@ -12,14 +12,14 @@ class login {
 
       function checklogin($conn) {
 
-        $sql = "SELECT * FROM moisture order by id DESC LIMIT 1"; 
+        $sql = "SELECT * FROM users where username='".$this->$username."'"; 
         if ($result = $conn->query($sql)) {
         
             if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
               //    echo "id: " . $row["id"]. " - Status: " . $row["status"]. " Time:" . $row["time"]. "<br>";
-              $userid=$row["status"];
+              $userid=$row["userid"];
             }
               } else {
                 echo "0 results";
