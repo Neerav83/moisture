@@ -10,6 +10,11 @@ class login {
         $this->password = $password;
       }
 
+      function checklogin() {
+        $userid="test";
+
+          return $userid;
+      }
       
 }
 

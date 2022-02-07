@@ -10,12 +10,18 @@ include 'db_connection.php';
 
 include 'classes/loginclass.php';
 
-$userid= new login('username','password');
+$login= new login('username','password');
 
-echo $userid->username;
+echo $login->username;
 
 
 $conn = OpenCon();
+
+echo $login->checklogin();
+
+
+
+
 //echo "Connected Successfully";
 
 $email="XXX";
