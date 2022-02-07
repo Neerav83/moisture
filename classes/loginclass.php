@@ -58,7 +58,7 @@ class login {
   function getSensors($conn, $userid, $roomid) {
 
     $sql = "SELECT * FROM sensors where userid='".$userid."' and roomid='".$roomid."'" ; 
-    echo $sql;
+   // echo $sql;
     if ($result = $conn->query($sql)) {
   
         if ($result->num_rows > 0) {
@@ -72,7 +72,7 @@ class login {
               $i++;
         }
           } else {
-            echo "0 results";
+           // echo "0 results";
           }
     
   }
