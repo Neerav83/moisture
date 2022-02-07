@@ -23,7 +23,7 @@ $conn = OpenCon();
 
 $userid= $user->checklogin($conn);
 
-var_dump ($user->getRooms($conn,$userid))
+var_dump ($user->getRooms($conn,$userid));
 
 
 
