@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 
 include 'db_connection.php';
 
-include '/classes/loginclass.php';
+include 'classes/loginclass.php';
 
 $userid= new login('username','password');
 
