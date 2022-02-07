@@ -52,12 +52,16 @@ $conn = OpenCon();
 
 $userid= $user->checklogin($conn);
 
-$rooms=$user->getRooms($conn,$userid);
+$user->getRooms($conn,$userid);
 
-$antalrooms=count($rooms);
+$antalrooms=count($user->rum);
+
+
 
 for ($i=0;$i<$antalrooms;$i++){
-    echo $rooms[$i]."<br>";
+    echo $user->rum[$i]."<br>";
+
+    
 }
 
 //echo "Connected Successfully";

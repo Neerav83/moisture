@@ -39,14 +39,16 @@ class login {
               $i=0;
               while($row = $result->fetch_assoc()) {
                     
-                $rum[$i]=$row["name"];
+                $this->rum[$i]=$row["name"];
+                $this->rumid[$i]=$row["roomid"];  
+
+
                 $i++;
           }
             } else {
               echo "0 results";
             }
       
-        return $rum;
     }
   }
       
