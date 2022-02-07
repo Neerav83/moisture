@@ -75,8 +75,8 @@ class login {
               $i++;
         }
           } else {
-            echo "0 results";
-          }
+            $this->sensorid[0]="";
+           }
     
   }
 
