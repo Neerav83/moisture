@@ -66,16 +66,13 @@ class login {
             $i=0;
             $this->sensorid=[];
             while($row = $result->fetch_assoc()) {
-              
-              
+                        
               $this->sensorid[$i]=$row['sensorid'];
-              
-              
-
+  
               $i++;
         }
           } else {
-            $this->sensorid[0]=0;
+           // $this->sensorid[0]=0;
            }
     
   }
