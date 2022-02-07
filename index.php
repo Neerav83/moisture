@@ -61,7 +61,7 @@ $antalrooms=count($user->rum);
 
 for ($i=0;$i<$antalrooms;$i++){
     echo $user->rum[$i]."(";
-    echo $user->rumid[$i].")<br>";
+    echo $user->rumid[$i].")";
     $user->sensorid="";
 
     $user->getSensors($conn,$userid, $user->rumid[$i]);
@@ -70,15 +70,10 @@ for ($i=0;$i<$antalrooms;$i++){
 
 
     for ($a=0; $a<$antalsensors;$a++){
-
-        echo $user->sensorid[$a]."<br>";
-
+        echo "<br>".$user->sensorid[$a];
     }
     
 }
-
-//echo "Connected Successfully";
-
 /*
 
 $sql = "SELECT * FROM moisture order by id DESC LIMIT 1"; 
