@@ -49,7 +49,7 @@ background-image: url("bilder/chili-planta.jpg");
 }
 .container{
   padding:10px;
-  background-color:rgba(211,211,211,0.5);
+  background-color:rgba(211,211,211,0.8);
   height:92%;
   overflow:hidden;
 }
