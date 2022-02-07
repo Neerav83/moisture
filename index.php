@@ -35,7 +35,7 @@ include 'db_connection.php';
 include 'classes/loginclass.php';
 
 
-$email="XXX";
+$email=$_GET['username'];
 
 
 $user= new login($email,'password');
@@ -47,10 +47,15 @@ $conn = OpenCon();
 
 $userid= $user->checklogin($conn);
 
-var_dump ($user->getRooms($conn,$userid));
+$rooms=$user->getRooms($conn,$userid);
 
+$antalrooms=$count($rooms);
 
+for ($i=0;$i<$antalrooms;$i++){
 
+echo $rooms[$i];
+    
+}
 
 //echo "Connected Successfully";
 
