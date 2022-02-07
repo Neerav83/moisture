@@ -96,12 +96,12 @@ for ($i=0;$i<$antalrooms;$i++){
       $user->getSensorStatus($conn,$user->sensorid[$a]);
 
      //   echo "<br>".utf8_encode($user->sensorname[$a])."(".$user->sensorid[$a].") - ";
-     echo "<br>".utf8_encode($user->sensorname[$a])." <br> ";
+     echo "<br>".utf8_encode($user->sensorname[$a])." - ";
      
      if ($user->sensorstatus=="1") {
-         echo "<label style='background-color:lightgreen'>Plantan är fuktig.";
+         echo "<label style='font-size:8px; background-color:lightgreen'>Plantan är fuktig.";
         } else {
-          echo "<label style='background-color:lightred'>Plantan är torr.";
+          echo "<label style='font-size:8px; background-color:lightred'>Plantan är torr.";
 
         }
         echo "(".$user->sensortime.")</label>";        
