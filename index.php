@@ -17,7 +17,7 @@ echo $login->username;
 
 $conn = OpenCon();
 
-echo $login->checklogin();
+echo $login->checklogin($conn);
 
 
 
