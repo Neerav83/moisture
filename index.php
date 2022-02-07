@@ -12,7 +12,7 @@ include 'classes/loginclass.php';
 
 $login= new login('username','password');
 
-echo $login->username;
+//echo $login->username;
 
 
 $conn = OpenCon();
