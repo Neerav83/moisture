@@ -28,6 +28,25 @@ class login {
           return $userid;
       }
     }
+
+    function getRooms($conn, $userid) {
+
+      $sql = "SELECT * FROM areas where userid='".$userid."'"; 
+      if ($result = $conn->query($sql)) {
+    
+          if ($result->num_rows > 0) {
+              // output data of each row
+              while($row = $result->fetch_assoc()) {
+                    
+                $rum[$row['id']]=$row["name"];
+          }
+            } else {
+              echo "0 results";
+            }
+      
+        return $rum;
+    }
+  }
       
 }
 

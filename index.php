@@ -10,21 +10,25 @@ include 'db_connection.php';
 
 include 'classes/loginclass.php';
 
-$login= new login('username','password');
+
+$email="XXX";
+
+
+$user= new login($email,'password');
 
 //echo $login->username;
 
 
 $conn = OpenCon();
 
-echo $login->checklogin($conn);
+echo $user->checklogin($conn);
+
+var_dump ($user->getrooms($conn))
 
 
 
 
 //echo "Connected Successfully";
-
-$email="XXX";
 
 /*
 
