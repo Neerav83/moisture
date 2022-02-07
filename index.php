@@ -24,17 +24,12 @@ font-family: 'Open Sans',sans-serif;
 </style>
 
 </head>
-
-
-
 <?php 
-
 /*
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 */
-
 include 'db_connection.php';
 
 include 'classes/loginclass.php';
@@ -75,7 +70,6 @@ for ($i=0;$i<$antalrooms;$i++){
     for ($a=0; $a<$antalsensors;$a++){
         
         echo $user->sensorid[$a];
-        echo "<br>";
         
       }
     
