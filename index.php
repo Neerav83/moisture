@@ -42,7 +42,7 @@ font-size:20px;
   font-size: 16px;
   border-radius: 15px;
   position:fixed;
-  bottom:10px;
+  bottom:50px;
   left:15px;
 }
 .container{
