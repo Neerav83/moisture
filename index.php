@@ -73,10 +73,9 @@ for ($i=0;$i<$antalrooms;$i++){
     //echo $antalsensors;
 
     for ($a=0; $a<$antalsensors;$a++){
-        echo $a;
-        echo $user->sensorname[$a]."(".$user->sensorid[$a].")";
-        echo "<br>";
-      }
+        
+        echo "<br>".$user->sensorname[$a]."(".$user->sensorid[$a].")";
+         }
     
 }
 /*
