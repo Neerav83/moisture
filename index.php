@@ -19,6 +19,7 @@ body{
 font-family: 'Open Sans',sans-serif;
 margin:0px;
 padding:0px;
+font-size:20px;
 }
 .header{
   height:5%;
