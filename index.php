@@ -70,10 +70,10 @@ for ($i=0;$i<$antalrooms;$i++){
 
     $antalsensors=count($user->sensorid);
 
-    echo $antalsensors;
+    //echo $antalsensors;
 
     for ($a=0; $a<$antalsensors;$a++){
-        
+        echo $a;
         echo $user->sensorname[$a]."(".$user->sensorid[$a].")";
         echo "<br>";
       }
