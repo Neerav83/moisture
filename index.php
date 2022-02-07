@@ -60,8 +60,8 @@ for ($i=0;$i<$antalrooms;$i++){
     }
     echo $user->rum[$i]."(";
     echo $user->rumid[$i].")";
-    $user->sensorid[]="";
-    $user->sensorname[]="";
+    $user->sensorid[]=[];
+    $user->sensorname[]=[];
     $user->getSensors($conn,$userid, $user->rumid[$i]);
 
     $antalsensors=count($user->sensorid);
