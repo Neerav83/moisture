@@ -174,8 +174,7 @@ if ($fuktstatus=="1"){
 */
 
 ?>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<button class='button'>Lägg till Växt</button>
+<button class='button'>Lägg till Sensor</button>
 </div>
 </body>
 </html>
