@@ -116,64 +116,6 @@ for ($i=0;$i<$antalrooms;$i++){
     
 }
 
-
-
-/*
-
-$sql = "SELECT * FROM moisture order by id DESC LIMIT 1"; 
-if ($result = $conn->query($sql)) {
-
-    if ($result->num_rows > 0) {
-        // output data of each row
-        while($row = $result->fetch_assoc()) {
-      //    echo "id: " . $row["id"]. " - Status: " . $row["status"]. " Time:" . $row["time"]. "<br>";
-      $fuktstatus=$row["status"];
-    }
-      } else {
-        echo "0 results";
-      }
-  
-
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-CloseCon($conn);
-
-
-
-?>
-
-
-<br>
-<center><h4>Fuktstatus</h4></center>
-<?php
-
-//echo $fuktstatus;
-
-if ($fuktstatus=="1"){
-?>
-
-<body style='background-color:green; font-size:35'>
-<center><img src='bilder/chili-planta.jpg' width=75%><br>
-<br>Jorden är fuktig!<br>Ej behov att vattna! <br><br> <img src='bilder/smilie-glad.gif' style='width:100px;'></center>
-</body>
-<?php
-
-} else {
-?>
-
-<body style='background-color:red; font-size:35px;'>
-<center><img src='bilder/chili-planta.jpg' style='width:75%'>
-<br>Jorden är torr <br>Vattning behövs! <br> <br> <img src='bilder/sad-smile2.png' style='width:100px;'></center>
-</body>
-<?php
-}
-
-//fclose($handler);
-
-?>
-*/
-
 ?>
 <button class='button'>Lägg till Sensor</button>
 </div>
