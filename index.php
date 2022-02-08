@@ -1,4 +1,3 @@
-
 <?php 
 header('Content-type: text/html; charset=latin1_swedish_ci');
 
@@ -68,6 +67,22 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 */
+
+if ($_POST['username']==""){
+
+  ?>
+
+<form>
+  Username<br>
+  <input type=text name=username><br>
+  <br>
+  <input type=submit value="Logga in">
+</form>
+
+  <?php
+
+} else {
+
 include 'db_connection.php';
 include 'classes/loginclass.php';
 
@@ -118,6 +133,10 @@ for ($i=0;$i<$antalrooms;$i++){
 
 ?>
 <button class='button'>Lägg till Sensor</button>
+<?php
+}
+?>
+
 </div>
 </body>
 </html>
