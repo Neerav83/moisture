@@ -61,6 +61,12 @@ background-image: url("bilder/chili-planta.jpg");
   height:50px;
 }
 </style>
+<script>
+function loggaut(){
+  window.location.replace("index.php");
+
+}
+</script>
 
 </head>
 <body>
@@ -143,6 +149,8 @@ for ($i=0;$i<$antalrooms;$i++){
 
 ?>
 <button class='button'>Lägg till Sensor</button>
+<br>
+<button class='button' style='background-color:red;' onclick=loggaut();>Logga ut</button>
 <?php
 }
 ?>
