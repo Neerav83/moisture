@@ -96,7 +96,7 @@ if ($_POST['username']==""){
 include 'db_connection.php';
 include 'classes/loginclass.php';
 
-$email=$_GET['username'];
+$email=$_POST['username'];
 
 $user= new login($email,'password');
 
