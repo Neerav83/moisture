@@ -89,6 +89,12 @@ background-image: url("bilder/chili-planta.jpg");
   background-color: white;
 }
 
+.topright{
+  top:0;
+  left:15px;
+  position: fixed;
+}
+
 </style>
 <script>
 function loggaut(){
@@ -107,7 +113,7 @@ function reloadpage(){
 </head>
 <body>
   <div class=header>
-    <center>PlantSensor</center>  <img onclick=reloadpage() height=25px src=bilder/reload.png>
+    <center>PlantSensor</center>  <img class=topright onclick=reloadpage() height=25px src=bilder/reload.png>
     
   </div>
   <div class=container>
