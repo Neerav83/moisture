@@ -57,6 +57,7 @@ background-image: url("bilder/chili-planta.jpg");
 .input {
   padding:15px;
   width:calc(100% - 30px);
+  height:30px;
 }
 </style>
 
