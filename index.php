@@ -9,8 +9,13 @@ header('Content-type: text/html; charset=latin1_swedish_ci');
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <?php 
-/*<meta http-equiv="refresh" content="5; url=index.php?username=<?php echo $_GET['username'];?>"> */
+$username=$_POST['username'];
+if ($_POST['username']=="") {
+ $username=$_GET['username']; 
+}
 ?>
+<meta http-equiv="refresh" content="5; url=index.php?username=<?php echo $username;?>"> 
+
 
 <title>Fuktstatus</title>
 <style>
@@ -98,7 +103,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 */
 
-if ($_POST['username']==""){
+if ($username==""){
 
   ?>
   <center>
@@ -119,7 +124,7 @@ if ($_POST['username']==""){
 include 'db_connection.php';
 include 'classes/loginclass.php';
 
-$email=$_POST['username'];
+$email=$username;
 
 $user= new login($email,'password');
 
