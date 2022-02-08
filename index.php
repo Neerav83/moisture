@@ -53,6 +53,11 @@ background-image: url("bilder/chili-planta.jpg");
   height:92%;
   overflow:hidden;
 }
+
+.input {
+  padding:15px;
+  width:calc(100% - 30px);
+}
 </style>
 
 </head>
@@ -71,12 +76,14 @@ error_reporting(E_ALL);
 if ($_POST['username']==""){
 
   ?>
-
+<br><br><brs>  
+<h2>Logga In</h2>
 <form>
-  Username<br>
-  <input type=text name=username><br>
+
+  Användarnamn:<br>
+  <input class='input' type=text name=username><br>
   <br>
-  <input type=submit value="Logga in">
+  <input class='input' type=submit value="Logga in">
 </form>
 
   <?php
