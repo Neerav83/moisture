@@ -202,5 +202,5 @@ for ($i=0;$i<$antalrooms;$i++){
   <input type='text' name=room><br>
   <input type='hidden' name=username value='<?php echo $username;?>'>
 
-  <input type=submit class='input'>Lägg till Sensor</button>
+  <input type=submit class='input' value='Lägg till Sensor'>
 </div>
