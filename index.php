@@ -13,9 +13,9 @@ $username=$_POST['username'];
 if ($_POST['username']=="") {
  $username=$_GET['username']; 
 }
-?>
-<meta http-equiv="refresh" content="5; url=index.php?username=<?php echo $username;?>"> 
 
+//<meta http-equiv="refresh" content="5; url=index.php?username=<?php echo $username;?>"> 
+?>
 
 <title>Fuktstatus</title>
 <style>
@@ -100,12 +100,17 @@ function loggaut(){
 function showaddsensor(){
   document.getElementById("addsensor").style.display="block";
 }
+
+function reloadpage(){
+  location.reload();
+}
 </script>
 
 </head>
 <body>
   <div class=header>
-    <center>PlantSensor</center>
+    <center>PlantSensor</center>  <img onclick=reloadpage() height=25px src=/bilder/reload.png>
+    
   </div>
   <div class=container>
 <?php 
