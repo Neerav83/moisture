@@ -87,7 +87,8 @@ background-image: url("bilder/chili-planta.jpg");
   width:100%;
   top:0;
   height:100%;
-
+  display: hidden;
+  background-color: white;
 }
 
 </style>
