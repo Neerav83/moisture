@@ -109,7 +109,7 @@ function reloadpage(){
 </head>
 <body>
   <div class=header>
-    <center>PlantSensor</center>  <img onclick=reloadpage() height=25px src=/bilder/reload.png>
+    <center>PlantSensor</center>  <img onclick=reloadpage() height=25px src=bilder/reload.png>
     
   </div>
   <div class=container>
