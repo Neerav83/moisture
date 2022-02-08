@@ -13,8 +13,6 @@ $username=$_POST['username'];
 if ($_POST['username']=="") {
  $username=$_GET['username']; 
 }
-
-//<meta http-equiv="refresh" content="5; url=index.php?username=<?php echo $username;?>"> 
 ?>
 
 <title>Fuktstatus</title>
