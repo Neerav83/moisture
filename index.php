@@ -82,6 +82,14 @@ background-image: url("bilder/chili-planta.jpg");
   width:calc(100% - 30px);
   height:50px;
 }
+#addsensor{
+  position:fixed;
+  width:100%;
+  top:0;
+  height:100%;
+
+}
+
 </style>
 <script>
 function loggaut(){
