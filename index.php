@@ -91,7 +91,7 @@ background-image: url("bilder/chili-planta.jpg");
 
 .topright{
   top:0;
-  left:15px;
+  right:15px;
   position: fixed;
 }
 
