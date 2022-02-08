@@ -45,7 +45,7 @@ background-image: url("bilder/chili-planta.jpg");
   font-size: 16px;
   border-radius: 15px;
   position:fixed;
-  bottom:75px;
+  bottom:90px;
   left:15px;
 }
 
