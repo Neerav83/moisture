@@ -77,7 +77,8 @@ error_reporting(E_ALL);
 if ($_POST['username']==""){
 
   ?>
-<br><br><brs>  
+  <center>
+<br><br><br>  
 <h2>Logga In</h2>
 <form>
 
@@ -86,7 +87,7 @@ if ($_POST['username']==""){
   <br>
   <input class='input' type=submit value="Logga in">
 </form>
-
+</center>
   <?php
 
 } else {
