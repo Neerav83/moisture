@@ -33,8 +33,7 @@ background-image: url("bilder/chili-planta.jpg");
  
 }
 .button {
-  /*background-color: #4CAF50; /* Green */
-  background-color: #FFFFFF; /* Green */
+  background-color: #4CAF50; /* Green */
   
   border: none;
   color: white;
