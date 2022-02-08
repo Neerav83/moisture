@@ -85,7 +85,7 @@ background-image: url("bilder/chili-planta.jpg");
 #addsensor{
   position:fixed;
   width:100%;
-  top:0;
+  top:5%;
   height:100%;
   display: none;
   background-color: white;
