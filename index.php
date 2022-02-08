@@ -88,6 +88,9 @@ function loggaut(){
   window.location.replace("index.php");
 
 }
+function showaddsensor(){
+  document.getElementById("addsensor").display="block";
+}
 </script>
 
 </head>
@@ -170,7 +173,7 @@ for ($i=0;$i<$antalrooms;$i++){
 }
 
 ?>
-<button class='button'>Lägg till Sensor</button>
+<button class='button' onclick=showaddsensor();>Lägg till Sensor</button>
 <br>
 <button class='logoutbutton' style='background-color:red;' onclick=loggaut();>Logga ut</button>
 <?php
@@ -180,3 +183,15 @@ for ($i=0;$i<$antalrooms;$i++){
 </div>
 </body>
 </html>
+
+
+<div id=addsensor>
+  <form method=post>
+  Sensornamn:<br>
+  <input type='text' name=sensorname><br>
+  Välj Rum:<br>
+  <input type='text' name=room><br>
+  <input type='hidden' name=username value='<?php echo $username;?>'>
+
+  <input type=submit class='input'>Lägg till Sensor</button>
+</div>
