@@ -45,6 +45,23 @@ background-image: url("bilder/chili-planta.jpg");
   font-size: 16px;
   border-radius: 15px;
   position:fixed;
+  bottom:75px;
+  left:15px;
+}
+
+.logoutbutton {
+  background-color: #4CAF50; /* Green */
+  
+  border: none;
+  color: white;
+  width:calc(100% - 30px);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  position:fixed;
   bottom:50px;
   left:15px;
 }
@@ -150,7 +167,7 @@ for ($i=0;$i<$antalrooms;$i++){
 ?>
 <button class='button'>Lägg till Sensor</button>
 <br>
-<button class='button' style='background-color:red;' onclick=loggaut();>Logga ut</button>
+<button class='logoutbutton' style='background-color:red;' onclick=loggaut();>Logga ut</button>
 <?php
 }
 ?>
