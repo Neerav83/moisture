@@ -98,8 +98,7 @@ function loggaut(){
 
 }
 function showaddsensor(){
-  alert("test");
-  document.getElementById("addsensor").display="block";
+  document.getElementById("addsensor").style.display="block";
 }
 </script>
 
