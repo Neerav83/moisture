@@ -81,7 +81,7 @@ if ($_POST['username']==""){
   <center>
 <br><br><br>  
 <h2>Logga In</h2>
-<form>
+<form method=post> 
 
   Användarnamn:<br>
   <input class='input' type=text name=username><br>
